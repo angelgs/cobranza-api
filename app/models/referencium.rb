@@ -1,0 +1,2 @@
+class Referencium < Persona
+end

@@ -1,0 +1,76 @@
+{
+  "pago": [
+    {
+        "contrato_id": 36,
+        "fecha_pago": "2016-12-20T00:00:00.000Z",
+        "monto_pago": "21.03",
+        "numero_pago": 44
+    },
+    {
+        "contrato_id": 36,
+        "fecha_pago": "2017-03-05T00:00:00.000Z",
+        "monto_pago": "57.09",
+        "numero_pago": 2
+    },
+    {
+        "contrato_id": 36,
+        "fecha_pago": "2016-11-26T00:00:00.000Z",
+        "monto_pago": "16.72",
+        "numero_pago": 18
+    },
+    {
+        "contrato_id": 39,
+        "fecha_pago": "2017-04-18T00:00:00.000Z",
+        "monto_pago": "87.17",
+        "numero_pago": 20
+    },
+    {
+        "contrato_id": 39,
+        "fecha_pago": "2016-10-05T00:00:00.000Z",
+        "monto_pago": "44.47",
+        "numero_pago": 14
+    },
+    {
+        "contrato_id": 39,
+        "fecha_pago": "2017-05-11T00:00:00.000Z",
+        "monto_pago": "41.94",
+        "numero_pago": 2
+    },
+    {
+        "contrato_id": 42,
+        "fecha_pago": "2017-03-29T00:00:00.000Z",
+        "monto_pago": "97.79",
+        "numero_pago": 30
+    },
+    {
+        "contrato_id": 42,
+        "fecha_pago": "2017-03-31T00:00:00.000Z",
+        "monto_pago": "67.24",
+        "numero_pago": 48
+    },
+    {
+        "contrato_id": 42,
+        "fecha_pago": "2017-04-28T00:00:00.000Z",
+        "monto_pago": "45.07",
+        "numero_pago": 22
+    },
+    {
+        "contrato_id": 44,
+        "fecha_pago": "2017-03-12T00:00:00.000Z",
+        "monto_pago": "25.73",
+        "numero_pago": 11
+    },
+    {
+        "contrato_id": 44,
+        "fecha_pago": "2017-02-22T00:00:00.000Z",
+        "monto_pago": "23.29",
+        "numero_pago": 16
+    },
+    {
+        "contrato_id": 44,
+        "fecha_pago": "2016-07-13T00:00:00.000Z",
+        "monto_pago": "44.99",
+        "numero_pago": 17
+    }
+]
+}

@@ -1,18 +1,19 @@
 class ContratosController < ApplicationController
-  before_action :set_contrato, only: [:show, :update, :destroy]
+  before_action :set_cobrador
+  before_action :set_cobrador_contrato, only: [:show]
 
-  # GET /contratos
+  # GET /cobradores/:cobradore_id/contratos
   def index
-    @contratos = Contrato.all
-
-    render json: @contratos
+    #render json: @cobrador.contratos
+    json_response(@cobrador.contratos)
   end
 
-  # GET /contratos/1
+  # GET /cobradores/:cobradore_id/contratos/1
   def show
     render json: @contrato
   end
 
+=begin
   # POST /contratos
   def create
     @contrato = Contrato.new(contrato_params)
@@ -37,11 +38,15 @@ class ContratosController < ApplicationController
   def destroy
     @contrato.destroy
   end
-
+=end
   private
+    def set_cobrador
+      @cobrador = Cobrador.find(params[:cobradore_id])
+    end
+
     # Use callbacks to share common setup or constraints between actions.
-    def set_contrato
-      @contrato = Contrato.find(params[:id])
+    def set_cobrador_contrato
+      @contrato = @cobrador.contratos.find_by!(id: params[:id]) if @cobrador
     end
 
     # Only allow a trusted parameter "white list" through.

@@ -10,6 +10,7 @@ LinkClienteReferencium.destroy_all
 Direccion.destroy_all
 Telefono.destroy_all
 Referencium.destroy_all
+Pago.destroy_all
 Producto.destroy_all
 Contrato.destroy_all
 Cliente.destroy_all
@@ -91,7 +92,16 @@ end
               precio_venta: Faker::Commerce.price)
         end
 
-        Cobrador.find(cobradores[Faker::Number.between(0, 1)]).contratos << contrato
+        cobrador = Cobrador.find(cobradores[Faker::Number.between(0, 1)])
+        cobrador.contratos << contrato
+
+        3.times do |index_pagos|
+          pago = contrato.pagos.create(fecha_pago: Faker::Date.between(365.days.ago, Date.today),
+           numero_pago: Faker::Number.between(1, 48),
+            monto_pago: Faker::Number.decimal(2))
+          cobrador.pagos << pago
+        end
+
       end
     end
   end
